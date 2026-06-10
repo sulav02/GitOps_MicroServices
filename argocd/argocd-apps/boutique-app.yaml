@@ -8,7 +8,7 @@ spec:
 
   source:
     repoURL: https://github.com/sulav02/GitOps_MicroServices.git
-    targetRevision: HEAD
+    targetRevision: master
     path: .
 
   destination:
