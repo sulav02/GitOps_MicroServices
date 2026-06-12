@@ -5,7 +5,7 @@ metadata:
   namespace: boutique-app
 spec:
   hostnames:
-    - "*.mesulav.com"
+    - "app.mesulav.com"
   parentRefs:
   - group: gateway.networking.k8s.io
     namespace: default
