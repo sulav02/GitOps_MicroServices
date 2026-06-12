@@ -25,6 +25,12 @@ metadata:
     {{- toYaml . | nindent 4 }}
   {{- end }}
   {{- end }}
+  
+{{- if .Values.global.imagePullSecrets }}
+imagePullSecrets:
+{{- toYaml .Values.global.imagePullSecrets | nindent 2 }}
+{{- end }}
+
 ---
 {{- end }}
 apiVersion: apps/v1
