@@ -25,11 +25,6 @@ metadata:
     {{- toYaml . | nindent 4 }}
   {{- end }}
   {{- end }}
-  
-{{- if .Values.global.imagePullSecrets }}
-imagePullSecrets:
-{{- toYaml .Values.global.imagePullSecrets | nindent 2 }}
-{{- end }}
 
 ---
 {{- end }}
@@ -49,6 +44,10 @@ spec:
       labels:
         app: {{ .Values.productCatalogService.name }}
     spec:
+      {{- if .Values.global.imagePullSecrets }}
+      imagePullSecrets:
+      {{- toYaml .Values.global.imagePullSecrets | nindent 8 }}
+      {{- end }}
       {{- if .Values.serviceAccounts.create }}
       serviceAccountName: {{ .Values.productCatalogService.name }}
       {{- else }}
