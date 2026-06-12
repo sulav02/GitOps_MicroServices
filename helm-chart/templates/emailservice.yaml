@@ -43,10 +43,6 @@ spec:
       labels:
         app: {{ .Values.emailService.name }}
     spec:
-      {{- if .Values.global.imagePullSecrets }}
-      imagePullSecrets:
-      {{- toYaml .Values.global.imagePullSecrets | nindent 8 }}
-      {{- end }}
       {{- if .Values.serviceAccounts.create }}
       serviceAccountName: {{ .Values.emailService.name }}
       {{- else }}

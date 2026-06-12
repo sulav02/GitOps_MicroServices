@@ -25,7 +25,6 @@ metadata:
     {{- toYaml . | nindent 4 }}
   {{- end }}
   {{- end }}
-
 ---
 {{- end }}
 apiVersion: apps/v1
@@ -46,10 +45,6 @@ spec:
       annotations:
         sidecar.istio.io/rewriteAppHTTPProbers: "true"
     spec:
-      {{- if .Values.global.imagePullSecrets }}
-      imagePullSecrets:
-      {{- toYaml .Values.global.imagePullSecrets | nindent 8 }}
-      {{- end }}
       {{- if .Values.serviceAccounts.create }}
       serviceAccountName: {{ .Values.frontend.name }}
       {{- else }}
