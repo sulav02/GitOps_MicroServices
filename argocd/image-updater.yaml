@@ -13,35 +13,35 @@ spec:
 
       images:
         - alias: adservice
-          imageName: ghcr.io/sulav02/microservices-demo/adservice
+          imageName: ghcr.io/sulav02/adservice
 
         - alias: cartservice
-          imageName: ghcr.io/sulav02/microservices-demo/cartservice
+          imageName: ghcr.io/sulav02/cartservice
 
         - alias: checkoutservice
-          imageName: ghcr.io/sulav02/microservices-demo/checkoutservice
+          imageName: ghcr.io/sulav02/checkoutservice
 
         - alias: currencyservice
-          imageName: ghcr.io/sulav02/microservices-demo/currencyservice
+          imageName: ghcr.io/sulav02/currencyservice
 
         - alias: emailservice
-          imageName: ghcr.io/sulav02/microservices-demo/emailservice
+          imageName: ghcr.io/sulav02/emailservice
 
         - alias: frontend
-          imageName: ghcr.io/sulav02/microservices-demo/frontend
+          imageName: ghcr.io/sulav02/frontend
 
         - alias: paymentservice
-          imageName: ghcr.io/sulav02/microservices-demo/paymentservice
+          imageName: ghcr.io/sulav02/paymentservice
 
         - alias: productcatalogservice
-          imageName: ghcr.io/sulav02/microservices-demo/productcatalogservice
+          imageName: ghcr.io/sulav02/productcatalogservice
 
         - alias: recommendationservice
-          imageName: ghcr.io/sulav02/microservices-demo/recommendationservice
+          imageName: ghcr.io/sulav02/recommendationservice
 
         - alias: shippingservice
-          imageName: ghcr.io/sulav02/microservices-demo/shippingservice
+          imageName: ghcr.io/sulav02/shippingservice
 
         - alias: loadgenerator
-          imageName: ghcr.io/sulav02/microservices-demo/loadgenerator
+          imageName: ghcr.io/sulav02/loadgenerator
 
